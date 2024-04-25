@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "more_potion_types",
+  "version": "${version}",
+  "name": "More Potion Types",
+  "description": "Adds a Big Potion and a Small Potion to the game",
+  "authors": [
+    "5Avian"
+  ],
+  "contact": {
+    "repo": "https://github.com/5Avian/more_potion_types"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/more_potion_types/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "fiveavian.more_potion_types.MorePotionTypes"
+    ],
+    "rei_common": [
+      "fiveavian.more_potion_types.plugin.MorePotionTypesREIPlugin"
+    ],
+    "emi": [
+      "fiveavian.more_potion_types.plugin.MorePotionTypesEMIPlugin"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "potion_fixes": ">=1.1.0"
+  }
+}
